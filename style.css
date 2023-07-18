@@ -237,3 +237,234 @@ img {
     display:block;
   }
 }
+
+/*--------BANNER-------*/
+.banner{
+  background:#ffffff;
+  padding-top:13rem;
+  padding-bottom:5rem;
+}
+.banner .banner__wrapper{
+  display:grid;
+  grid-template-columns:2fr 2fr;
+  align-items:center;
+}
+.banner .banner__text h1{
+  font-size:10rem;
+  font-weight:800;
+  color:#ffa700;
+  line-height:1.2;
+}
+.banner .banner__text p{
+  margin:5rem 0;
+  max-width:45rem;
+  text-align:justify;
+}
+@media screen and (max-width:500px){
+  .banner .banner__wrapper{
+    display:grid;
+    grid-template-columns: 1fr;
+  }
+  .banner .banner__text{
+    order:2;
+    text-align:center;
+    margin:0 2rem;
+    margin-top:3rem;
+  }
+  .banner .banner__wrapper img{
+    width:20rem;
+    margin:0 auto;
+  }
+  .banner .banner__text h1{
+    font-size:3rem;
+  }
+  .banner .banner__text p{
+    margin-top:2rem;
+    margin-bottom:5rem;
+  }
+}
+/*--------HM-SERVICES-------*/
+.hm-services{
+  padding:5rem 0;
+  background:#2b2b2b;
+}
+.hm-services .hm-services__wrapper{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap:8rem;
+}
+.hm-services .hm-services__item{
+  text-align:center;
+}
+.hm-services .hm-services__item i{
+  color:#ffa700;
+  font-size:6rem;
+}
+.hm-services .hm-services__item h4{
+  color:#ffa700;
+  font-weight:600;
+  margin-top:2rem;
+  margin-bottom:3rem;
+}
+.hm-services .hm-services__item p{
+  color:#ffffff;
+  text-align:justify;
+  margin-bottom:5rem;
+}
+@media screen and (max-width:500px){
+  .hm-services .hm-services__wrapper{
+    display:unset;
+    display:flex;
+    flex-direction:column;
+    gap:12rem;
+  }
+  .hm-services .hm-services__item{
+    margin:0 5rem;
+  }
+}
+
+/*--------ABT-------*/
+.abt{
+  background:#ffffff;
+  padding:5rem 0;
+}
+.abt .abt__wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.abt .abt__text{
+  max-width: 60rem;
+}
+.abt .abt__text h3{
+  color:#ffa700;
+  font-size:3rem;
+  font-weight:600;
+}
+.abt .abt__text p{
+  margin:3rem 0;
+}
+@media screen and (max-width:500px){
+  .abt .abt__wrapper{
+    flex-direction:column;
+  }
+  .abt .abt__wrapper img{
+    width:20rem;
+  }
+  .abt .abt__text{
+    margin:0 2rem;
+    margin-top:3rem;
+  }
+  .abt .abt__text h3{
+    text-align:center;
+  }
+  .abt .abt__text p{
+    text-align:justify:
+  }
+}
+/*--------LATEST TRENDS-------*/
+.ltrends{
+  padding:5rem 0;
+  background: #2b2b2b;
+}
+.ltrends .ltrends__title h2{
+  color:#ffa700;
+  font-size:4rem;
+  font-weight:600;
+}
+.ltrends .ltrends__title p{
+  color:#ffffff;
+}
+.ltrends .ltrends__wrapper{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap:8rem;
+}
+.ltrends .ltrends__card{
+  background:#ffffff;
+  border-radius:2rem;
+  margin-top:8rem;
+  transition:.5s ease;
+}
+.ltrends .ltrends__card:hover{
+  transform:scale(1.1);
+  transition:.5s ease;
+}
+.ltrends .ltrends__card img{
+  width:100%;
+}
+.ltrends .ltrends__card .ltrends__card__text{
+  padding:2rem;
+}
+.ltrends .ltrends__card .ltrends__card__text h4{
+  color:#ffa700;
+  font-weight:600;
+}
+.ltrends .ltrends__card .ltrends__card__text p{
+  margin:3rem 0;
+}
+.ltrends .ltrends__card .ltrends__card__text a{
+  color:#ffa700;
+}
+@media screen and (max-width:500px){
+  .ltrends .ltrends__title{
+    text-align:center;
+  }
+  .ltrends .ltrends__wrapper{
+    display:unset;
+    display:flex;
+    flex-direction:column;
+  }
+  .ltrends .ltrends__card{
+    margin-left:2rem;
+    margin-right:2rem;
+    border-radius:3rem;
+  }
+  .ltrends .ltrends__card:hover{
+    transform:scale(1);
+  }
+}
+
+
+
+/*--------FREE-------*/
+.free{
+  padding:5rem 0;
+  background:#ffa700;
+}
+.free h2{
+  font-size:4rem;
+  font-weight:600;
+}
+.free p{
+  margin-bottom:3rem;
+}
+.free .free__wrapper{
+  text-align:center;
+}
+
+/*--------REPEATABLE PATTERNS-------*/
+.btn{
+  display:inline-block;
+  padding:1.5rem;
+  border-radius:5rem;
+  border:1px solid transparent;
+}
+.btn.yellow{
+  background:#ffa700;
+  color:#ffffff;
+}
+.btn.yellow:hover{
+  background:#2b2b2b;
+  border:1px solid #ffa700;
+  color:#ffa700;
+}
+.btn.dark{
+  background:#2b2b2b;
+  color:#ffffff;
+}
+.btn.dark:hover{
+  background:#ffa700;
+  border:1px solid #2b2b2b;
+  color:#2b2b2b;
+}
