@@ -678,7 +678,38 @@ img {
   font-weight:600;
   color:#ffa700;
 }
-
+@media screen and (max-width:500px){
+  .services__item .services__content:nth-child(odd)
+  ,.services__content:nth-child(even){
+    display:flex;
+    flex-direction:column;
+    gap:5rem;
+  }
+  .services__item img{
+    width:25rem;
+  }
+  .services__item .services__content .services__text h1{
+    font-size:2.5rem;
+  }
+  .services__item .services__content{
+    margin:0 2rem;
+    text-align:center;
+  }
+  .services__item .services__content p{
+    text-align:justify;
+  }
+  .services__item .services__content .services__text .services__price {
+    margin:3rem 0;
+  }
+  .services__item .services__content .services__text .services__price p{
+  text-align:center;
+  }
+  .services__item .services__content .services__text .services__price p:last-child{
+    font-size:1.2rem;
+    max-width:15rem;
+    margin: 0 auto;
+  }
+}
 
 
 
